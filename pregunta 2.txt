@@ -1,0 +1,4 @@
+import miningscience as msc 
+artgem,artid = msc.download_pubmed("Ecuador genomics")
+print ("El número de artículos es: " , artgem) 
+print ("El PMID del primer artículo es: " ,artid [0])
