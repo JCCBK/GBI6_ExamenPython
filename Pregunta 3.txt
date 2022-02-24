@@ -1,0 +1,8 @@
+import miningscience as msc 
+artgem,artid = msc.download_pubmed("Ecuador genomics")
+pub_year= msc.mining_pubs(artid, "DP")
+print(pub_year.iloc[[0,1,-2,-1]])
+pub_authors= msc.mining_pubs(artid, "AU")
+print(pub_authors.iloc[[0,1,-2,-1]])
+coutries=msc.mining_pubs(artid, "AD")
+print(coutries.iloc[[0,1,-2,-1]])
